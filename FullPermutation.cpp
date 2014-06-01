@@ -3,7 +3,7 @@
  *
  *       Filename:  full_permutation.cpp
  *
- *    Description:  输出n个元素的全排列（递归解决)
+ *    Description:  输出n个元素的全排列（递归与非递归解决)
  *
  *        Version:  1.0
  *        Created:  2014/05/30 06时52分59秒
