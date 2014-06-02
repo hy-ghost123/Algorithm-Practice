@@ -18,18 +18,30 @@
 #include <iostream>
 using namespace std;
 
-void recursion_Perm(int [], int, int);//递归实现
-void nonrecursion_Perm(int [], int, int);//非递归实现
-void swap(int [],int, int);
+typedef class{
+	public:
+		int Pos1, Pos2;
+}ExchangePoint;
+
+///////////////////////////////////////////////////////////////////////
+//Global Variable
 
 int str[100], str_copy[100];
 int string_Length, operate_begin, operate_end;
 int sum;
-typedef struct{
-	int Pos1, Pos2;
-}ExchangePoint;
 
-int main(){	
+///////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////
+//Function List
+
+void recursion_Perm(int [], int, int);//递归实现
+void nonrecursion_Perm(int [], int, int);//非递归实现
+void swap(int [],int, int);
+
+///////////////////////////////////////////////////////////////////////
+
+int main(int agrc,char ** agrv){	
 	cin >> string_Length;
 	for(int i=0; i<string_Length; i++){
 		cin >> str[i];
