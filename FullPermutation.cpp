@@ -21,7 +21,10 @@ using namespace std;
 void recursion_Perm(int [], int, int);//递归实现
 void nonrecursion_Perm(int [], int, int);//非递归实现
 void swap(int [],int, int);
-int str[100], str_copy[100], string_Length, operate_begin, operate_end, sum;
+
+int str[100], str_copy[100];
+int string_Length, operate_begin, operate_end;
+int sum;
 typedef struct{
 	int Pos1, Pos2;
 }ExchangePoint;
