@@ -13,17 +13,18 @@ entity led is
 	end led;
 
 architecture arch of led is
+type Arr is array (0 to 7) of std_logic_vector(15 downto 0);
 signal current_row: std_logic_vector(7 downto 0);
 begin
 	p1:process(clk)
-	variable red2 : array (0 to 7) of std_logic_vector(7 downto 0) := ( "11111111",
-																	 "11111111",
-																	 "11010111",
-																	 "10000011",
-																	 "11000111",
-																	 "11101111",
-																	 "11111111",
-																	 "11111111");
+	variable red2 : Arr := ( "11111111",
+							"11111111",
+							"11010111",
+							"10000011",
+							"11000111",
+							"11101111",
+							"11111111",
+							"11111111");
 	variable c: integer := 0;
 	begin
 		if clk = '1' and clk'event then
